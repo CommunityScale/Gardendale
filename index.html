@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H13EFXBPKL"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-H13EFXBPKL');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WJ5WD2NX');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Metadata 2024 -->
+	<meta charset="utf-8">
+	<title>Housing Needs Assessment</title>
+	<meta name="description" content="Explore the City of Gardendale Housing Needs Assessment.">
+	<meta name="keywords" content="Gardendale, Alabama, Housing, Urban Planning, CommunityScale, Assessment, Dashboard">
+	<meta name="author" content="CommunityScale">
+	<link rel="canonical" href="https://communityscale.github.io/Gardendale/">
+	<meta property="og:title" content="Gardendale Housing Needs Assessment">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://communityscale.github.io/Gardendale/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/CommunityScale/Stowe/main/images/socialcard.jpg">
+	<meta property="og:description" content="Housing Study educational dashboard for the City of Gardendale, AL. Provides detailed analysis and insights on housing trends, affordability, and needs.">
+	<meta property="og:site_name" content="CommunityScale">
+	<meta property="og:locale" content="en_US">
+	<meta property="article:author" content="CommunityScale">
+	<meta property="article:tag" content="Urban Planning">
+	<meta property="article:tag" content="Housing">
+	<meta property="article:tag" content="Gardendale Alabama">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Gardendale Housing Needs Assessment">
+	<meta name="twitter:description" content="Explore the City of Gardendale Housing Needs Assessment.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/CommunityScale/Stowe/main/images/socialcard.jpg">
+	<meta name="twitter:creator" content="@CommunityScale">
+	<meta http-equiv="content-language" content="en">
+
+	<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/cs-template.css">
+
+	<!-- Fonts / icons / table
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gloock:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/b6b458829a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ5WD2NX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<script>
+		function openImagePopup(url) {
+		  window.open(
+			url,
+			'popupImage',
+			'width=800,height=600,resizable=yes,scrollbars=yes'
+		  );
+		}
+	</script>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<!-- Sticky header -->
+	<div class="sticky">
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/client/client-logo.png" alt="City of Gardendale Alabama" class="inline-logo">
+
+
+					<span class="title"><b>Housing Needs Assessment</b></span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#Top"><span class="fa fa-arrow-up"></span> Top</a>
+						<a href="#Overview">Overview </a>
+						<a href="#Findings">Key indicators </a>
+						<a href="#Strategies">Strategies</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#Top"><span class="fa fa-arrow-up"></span> Top</a>
+				<a href="#Overview">Overview </a>
+				<a href="#Findings">Key indicators </a>
+				<a href="#Strategies">Strategies</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cover banner -->
+	<div class="cover" id="Top" style="background:linear-gradient(to right,rgb(166,35,62,.8) 60%,rgba(166,35,62,.5)), url(images/client/cover-background.png) no-repeat center center; background-size: cover;">
+		<div class="container" style="margin-top: 0">
+			<h1>City of Gardendale
+				<br><span style="font-weight: normal;">Housing Needs Assessment</span>
+			</h1>
+			<div class="row">
+				<div class="eight columns" style="margin-top: 2%;">
+					<p>This dashboard summarizes key findings from the City of Gardendale's 2025 Housing Needs Assessment, conducted by <a href="https://communityscale.io/" target="_blank" rel="noopener noreferrer">CommunityScale</a> to support the development of Gardendale's <a href="https://www.plangardendale.com/" target="_blank" rel="noopener noreferrer">Comprehensive Plan</a> by the <a href="https://www.rpcgb.org/" target="_blank" rel="noopener noreferrer">Regional Planning Commission of Greater Birmingham</a>.</p>
+					<div class="chip-container">
+						<a href="#Overview"><button class="button-primary">Purpose of this plan</button></a>
+						<a href="#Findings"><button class="button-primary">Key indicators from the analysis</button></a>
+						<a href="#Production"><button class="button-primary">Housing production target</button></a>
+						<a href="#Strategies"><button class="button-primary">Draft strategies from the plan</button></a>
+						<!--
+						<a href="survey.html"><button class="button-primary"><span class="fa fa-user"></span>Take the housing survey</button></a>
+						-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 
+╭────────────────────────╮
+|    OVERVIEW            |
+╰────────────────────────╯
+-->
+
+<div class="container" id="Overview">
+	<div class="row">
+		<div class="twelve columns" style="margin-top: 2%">
+			<h3>Goals for the study</h3>
+		</div>
+	</div>	
+	<div class="row">	
+		<div class="boxes">
+			<div class="box">
+				<div class="large-icon">
+					<img src="images/theme/Frame 7.png" class="inline-image">
+				</div>
+				<h5>Measure and describe housing needs and opportunties in Gardendale.</h5>
+			</div>
+			<div class="box">
+				<div class="large-icon">
+					<img src="images/theme/Frame 3.png" class="inline-image">
+				</div>
+				<h5>Convene and inform a community conversation around housing needs and priorities in Gardendale.</h5>
+			</div>
+			<div class="box">
+				<div class="large-icon">
+					<img src="images/theme/Frame 2.png" class="inline-image">
+				</div>
+				<h5>Help inform where and how the City should promote or invest in housing production.</h5>							
+			</div>
+			<div class="box">
+				<div class="large-icon">
+					<img src="images/theme/Frame 4.png">
+				</div>
+				<h5>Recommend policies and strategies to address housing challenges and capture opportunties.</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="divider" id="Findings" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/IMG_3533r.JPG); background-repeat: no-repeat; background-size: cover">
+	<div class="container">
+		<div class="twelve columns center-align">
+			<div class="divider-header">
+				<h2 class="inline-text">Key findings</h2>
+			</div>
+			<h6>The housing story in Stowe is characterized by market tension between the demand for second homes and short-term rentals and the need for attainable year-round housing for local residents. The section below summarizes key observations and findings from the study's quantitative analysis and stakeholder focus groups.</h6>
+			<div class="chip-container">
+				<a href="#Vision"><button class="button-primary">Vision</button></a>
+				<a href="#Growth"><button class="button-primary">Growth</button></a>
+				<a href="#Development"><button class="button-primary">Construction</button></a>
+				<a href="#Non-homestead"><button class="button-primary">Non-homestead</button></a>
+				<a href="#Affordability"><button class="button-primary">Affordability</button></a>
+				<a href="#Workforce"><button class="button-primary">Workforce</button></a>
+				<a href="#Aging"><button class="button-primary">Aging</button></a>
+				<a href="#Schools"><button class="button-primary">Schools</button></a>
+				<a href="#Barriers"><button class="button-primary">Barriers</button></a>
+				<a href="#Production"><button class="button-primary">Housing need</button></a>
+				<a href="#Goals"><button class="button-primary">Housing goal</button></a>
+				<a href="#Strategies"><button class="button-primary">Strategies</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="divider" id="Vision" style="margin-top: 0%; padding-top: 0; margin-bottom: 0%; padding-bottom: 0;">
+		<div class="container" style="margin-bottom: 0%; padding-bottom: 0;">
+			<div class="row insight-box" id="Growth">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Gardendale includes people of all income levels, though higher incomes are more common.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>This study measures household characteristics and housing need in terms of household incomes relative to the local Area Median Income (AMI). For example, households within the "60-80%" group earn between 60% and 80% of the HUD-established AMI for the metro area. </p>
+					<p>Each household AMI group has a different range of affordable housing costs. The right two columns indicate the maximum home price and rent affordable to each.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="Household growth trend and projection" aria-label="Interactive area chart" id="datawrapper-chart-kiSQI" src="https://datawrapper.dwcdn.net/kiSQI/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="417" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Development">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Gardendale is still affordable, but not as affordable as it used to be.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>This chart compares the median listing price in Gardendale with the home value attainable to a household earning the median household income. A wider gap means higher barrier to entry for first-time homebuyers and increased risk that an existing resident might be priced out of the community if they choose or need to move to a different house. Affordability is based on the county’s estimated median income. Actual affordability levels for specific properties vary based on variation in the above variables as well as possible additional costs for some units such as condominium fees.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="How affordable is Gardendale?" aria-label="Interactive line chart" id="datawrapper-chart-A6eLB" src="https://datawrapper.dwcdn.net/A6eLB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="523" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Non-homestead">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Many lower-income households in Gardendale cannot find housing they can afford.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>Households are cost burdened when paying more than 30% of their income on housing costs. They are considered severely cost burdened when these costs exceed 50% of their income.</p>
+					<p>For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG860222" target="_blank" rel="noopener noreferrer">renters</a>, this includes lease rent and utilities. For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG650222" target="_blank" rel="noopener noreferrer">homeowners</a>, this includes mortgage costs, property taxes, insurance, utilities, and any condo fees.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="Cost burden by income level in Gardendale" aria-label="Stacked Bars" id="datawrapper-chart-c6NCY" src="https://datawrapper.dwcdn.net/c6NCY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="188" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Affordability">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>While Gardendale is home to many aging seniors, it is also attracting families with young kids.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>Unlike many other parts of the country where an aging population is the major headline, most of Gardendale’s projected growth is concentrated among younger cohorts. However, there is also growth at the older end of the spectrum too.</p>
+					<p>Each age group has different housing preferences, such as larger homes for families or a mix of smaller ownership and rental options for young adults and seniors interested in downsizing.</p>
+					<iframe title="Net household change (2025-35)" aria-label="Column Chart" id="datawrapper-chart-gPOXl" src="https://datawrapper.dwcdn.net/gPOXl/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="194" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="Changing share of population by age cohort" aria-label="Interactive area chart" id="datawrapper-chart-VkqG0" src="https://datawrapper.dwcdn.net/VkqG0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="424" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>			
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Workforce">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Gardendale is more than just a bedroom community, but it’s not a major employment center either.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>Though technically more of a bedroom community than a job center, Gardendale has a somewhat balanced jobs/workers mix. However, a very small portion of people both live and work in town.</p>
+					<table>
+						<tr>
+							<td>People who live here</td>
+							<td>6,943</td>
+						</tr>
+						<tr>
+							<td>People who work here</td>
+							<td>5,118</td>
+						</tr>
+						<tr>
+							<td><b>People who live and work here</b></td>
+							<td><b>403</b></td>
+						</tr>
+					</table>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<img src="images/Employment.jpg" width="100%">
+					<figcaption style="font-size: 0.8rem; margin-top: 0.5rem;">Employment concentrations across the Birmingham region (Source: Census Longitudinal Employer-Household Dynamics (LEHD) 2022).</figcaption>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Rental affordability">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Gardendale does not have enough housing options attractive to most professionals and job creators.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>Job creation, talent attraction, and workforce retention can be influenced by the availability of housing options that meet the preferences and affordability constraints of prospective employees.</p>
+					<p>The top table summarizes the home prices and rent levels that would be attainable to typical employees in essential workforce professions. It will be easier to keep these important jobs filled if workers can find attainable housing nearby.</p>
+					<p>The bottom table indicates pricing attainable to professionals in knowledge sector jobs. These workers may prefer to live (and work) in a community that offers housing at moderately high price points along with amenities that support a good quality of life.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="" aria-label="Table" id="datawrapper-chart-Fk8va" src="https://datawrapper.dwcdn.net/Fk8va/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="499" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>		
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Aging">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Gardendale is projected to grow by about 1,000 households over the next 10 years.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<iframe title="Projected 10-year net growth" aria-label="Table" id="datawrapper-chart-HETGM" src="https://datawrapper.dwcdn.net/HETGM/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="363" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+					<p>RPCGB projects Gardendale will be home to 7,552 households by 2035, implying growth will accelerate somewhat in the coming decade compared to the last 15 years. However, this is growth can only be realized if enough housing units are created at the same pace to accommodate it.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="Gardendale 10-year growth projection" aria-label="Interactive line chart" id="datawrapper-chart-VWEn4" src="https://datawrapper.dwcdn.net/VWEn4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="420" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Schools">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Housing construction has slowed recently, but new projects in the pipeline will help keep up with growth.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<iframe title="New development in the pipeline" aria-label="Table" id="datawrapper-chart-yyLbn" src="https://datawrapper.dwcdn.net/yyLbn/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="257" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+					<p>Building permitting history is a proxy for construction activity over time. Gardendale’s permitting has gradually slowed over the past 10 years with the exception of a large development permitted around 2020. However, there are over 500 units in the pipeline, including single-family for sale and single-family for rent products.</p>
+				</div>
+				<div class="eight columns" style="margin-top: 2%">
+					<iframe title="New construction housing building permits issued per year" aria-label="Column Chart" id="datawrapper-chart-78Ihu" src="https://datawrapper.dwcdn.net/78Ihu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="412" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+					</script>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Barriers">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Sustained growth is necessary to keep the City running - and more housing offers other benefits too.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p><b>Continued growth is necessary to offset rising municipal costs without increasing taxes or cutting services.</b> The best way to keep up with rising municipal costs is to sustain growth in the tax base. While growth in other land uses can contribute to this, housing has been and would continue to be the primary. Also, without ongoing household growth, other uses like retail and employment could see their growth start to plateau in turn.</p>
+					<p><b>Building for professional workforce can help attract more white collar jobs.</b> Gardendale’s current housing stock may not be competitive with other places in the region at attracting professional talent and the jobs that follow.</p>
+					<p><b>Create a place everyone can enjoy.</b> Concentrating housing around a Town Center can underwrite amenities like public space, shops, restaurants, and walkable streets that improve quality of life for existing residents in addition to attracting new jobs and investment.</p>
+				</div>
+				<div class="four columns" style="margin-top: 2%; margin-left: 4%;">
+					<p><b>Changing demographics driving increased demand for alternatives to the traditional single-family option.</b> This includes existing Gardendale residents, such as empty nesters, downsizing seniors, and young people who grew up here starting new households.</p>
+					<p><b>Denser housing has a higher fiscal ROI.</b> From smaller single family lots to townhomes, apartments, and condos, higher density translates into higher tax base per acre.</p>
+					<p><b>Density can be contained to just where it is desired and manageable.</b> Good planning keeps development where it makes sense and away from where it doesn’t.</p>
+				</div>
+				<div class="four columns" style="margin-top: 2%; margin-left: 4%;">
+					<img src="images/scene1.jpg" width="100%">
+					<img src="images/scene2.jpg" width="100%">				
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Production">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Dozens of residents attended the February housing workshop to engage with the process.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="six columns" style="margin-top: 2%; margin-left: 0;">
+					<p>To inform this Housing Needs Assessment and the housing element of the comprehensive plan, the City held a housing workshop on February 27, 2025 which was attended by dozens of local residents and stakeholders.</p>
+					<p>The workshop included a presentation followed by a session of interactive activities designed to collect targeted feedback and ideas from participants.</p>
+					<p>Prior to the workshop, the project team met with a panel of local leaders and real estate professionals for a discussion about the Gardendale housing market and development economics.</p>
+					<p>Meeting materials such as the presentation slides and a recording are available on the <a href="https://www.plangardendale.com/housing-workshop.html" target="_blank" rel="noopener noreferrer">project website</a>.</p>
+				</div>
+				<div class="six columns" style="margin-top: 2%">
+					<img src="images/meeting.jpg" width="100%">	
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Goals">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Residents love their community - but they are also open to change, as long as it is carefully managed.</h3>
+					<h5>Top responses from public engagement activities</h5>
+
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>What do we want to get out of growth?</p>
+					<ol>
+						<li>Dropping homestead rate</li>
+						<li>Shrinking school enrollment</li>
+						<li>Emerging labor shortage</li>
+						<li>Rapidly aging population</li>
+					</ol>
+					<br>
+					<p>Who should we grow for?</p>
+					<ol>
+						<li>Downsizing seniors</li>
+						<li>Mid-career families upgrading</li>
+						<li>Retirees seeking active lifestyles</li>
+						<li>Young families</li>
+					</ol>
+				</div>
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+						<p>Where should new housing be located?</p>
+					<ol>
+						<li>New town center around Main Street / Fieldstown Road</li>
+						<li>Neighborhood centers and infill housing adjacent to Highway 31</li>
+						<li>New housing on unbuilt land around the City’s periphery</li>
+					</ol>
+				</div>
+				<div class="four columns" style="margin-top: 2%; margin-left: 4%;">
+					<p>Takeaways from the online survey:</p>
+					<ol>
+						<li>While Gardendale’s current housing stock is well suited to a significant segment of the population, unmet needs include larger and more expensive houses as well as options for downsizing seniors.</li>
+						<li>Gardendale’s limited housing variety leads some to move elsewhere instead, even if they would rather live in Gardendale for family or community reasons.</li>
+						<li>There is support for a range of community amenities that could be supported through new housing development and related investment, especially retail, restaurants, entertainment, town square, parks, and trails.</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="row insight-box" id="Strategies">
+				<!-- Heading Row -->
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Housing strategies for consideration.</h3>
+				</div>
+				<!-- Main Content Row -->
+				<div class="four columns" style="margin-top: 2%; margin-left: 0;">
+					<p>This study has resulted in a set of policy recommendations to help the City promote its housing goals and manage growth toward the community’s vision for its future. The suggested approaches at right reflect opportunities we have identified through the planning process.</p>
+					<p>Each approach brings advantages and challenges related to cost-benefit criteria such as:</p>
+					<ul>
+						<li><b>Timeframe:</b> How long will it take?</li>
+						<li><b>Cost to the City:</b> Can we afford to do it?</li>
+						<li><b>Staff capacity:</b> Is current staffing sufficient?</li>
+						<li><b>Political risk:</b> Will the community support this?</li>
+						<li><b>Community benefit:</b> What is the return on investment?</li>
+					</ul>
+				</div>
+				<div class="eight columns" style="margin-top: 2%; margin-left: 10;">
+					<h5>Incentivize New Development that Meets Housing Goals</h5>
+					<h5>Streamline the Permitting Process</h5>
+					<h5>Facilitate Use of Federal and State Housing Funds</h5>
+					<h5>Pursue New Housing Typologies and Creative Approaches</h5>
+					<h5>Update Zoning to Increase Housing Flexibility and Density</h5>
+					<h5>Leverage Public Land Assets for Housing		</h5>			
+					<h5>Develop a town center</h5>						
+					<h5>Monitor progress</h5>				
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- 
+╭────────────────────────╮
+|    Footer              |
+╰────────────────────────╯
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<div class="footer" style="background:linear-gradient(to right,white 80%,rgba(34, 124, 157,.1));">
+		<div class="container">
+			<div class="unresponsive" style="margin-bottom: 30px;">
+				<div class="content-size"><a href="https://www.stowevt.gov/Home"><img class="no-rounded-edges" src="./images/client/Stowe Logo Transparent Black Lettering.png" height="auto" width="30px" title="CommunityScale" alt="CommunityScale"></a></div>
+				<div class="fill-space">
+					<p class="">The <a href="https://www.stowevt.gov/Government/Housing-Task-Force" target="blank">Housing Task Force</a> is an advisory body charged with collecting data and making recommendations on how to better support year-round residential housing at more affordable price points in the <a href="https://www.stowevt.gov/Home" target="_blank">Town of Stowe, VT</a>.</p>
+				</div>
+			</div>
+			<div class="unresponsive">
+				<div class="content-size"><a href="http://communityscale.io"><img class="no-rounded-edges" src="./images/CommunityScale-logo.png" height="auto" width="30px" title="CommunityScale" alt="CommunityScale"></a></div>
+				<div class="fill-space">
+					<p class=""><a href="http://communityscale.io" target="blank">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. Follow us on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">X</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="nav-javascript.js"></script>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
