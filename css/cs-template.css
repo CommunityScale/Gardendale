@@ -21,6 +21,21 @@ Table of contents
 */
 
 
+/* Custom css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Strategy Headline Styles */
+.strategy-headline {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+  padding-left: 0.5em;
+  border-left: 4px solid #a6233e;
+  color: #222;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
